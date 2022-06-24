@@ -1,0 +1,27 @@
+
+
+
+/* ------------------------------------------------------
+                     Create Clock
+----------------------------------------------------- */
+
+.clock {
+margin:100px auto;
+background: #fff;
+color: #F6E7D8;
+border: 7px solid #F6E7D8;
+box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+padding: 20px 20px 30px;
+text-align: center;
+width: 500px;
+}
+.hms {
+font-size: 68pt;
+font-weight: 200;
+}
+.ampm {
+font-size: 22pt;
+}
+.date {
+font-size: 15pt;
+}
