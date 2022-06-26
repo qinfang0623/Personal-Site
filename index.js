@@ -169,7 +169,7 @@ function wallPaper() {
 buttonAnimation();
 
 function buttonAnimation() {
-  $("#pop-up").animate({opacity: 0}, 7000, 'linear');
+  $("#pop-up").animate({opacity: 0}, 10000, 'linear');
   setTimeout(function() {
     $("#title").animate({opacity: 1}, 2000, 'linear');
     $("#infor-personal").animate({opacity: 1}, 2000, 'linear');
@@ -178,6 +178,5 @@ function buttonAnimation() {
     $("#hobby").animate({opacity: 1}, 2000, 'linear');
     $("#contact").animate({opacity: 1}, 2000, 'linear');
     $("#footer").animate({opacity: 1}, 2000, 'linear');
-    $("hr").animate({opacity: 1}, 2000, 'linear');
-  }, 7000);
+  }, 10000);
 }
