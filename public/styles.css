@@ -536,7 +536,7 @@ body {
 }
 
 .popup-container {
-  position: fixed;
+  position: absolute;
   text-align: center;
   padding: 10%;
   top: 0;
