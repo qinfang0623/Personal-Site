@@ -20,7 +20,22 @@
 
   <!-- Welcome pop up -->
   <section id="pop-up">
-    <div class="container-fluid popup-container">
+
+    <div class="container-fluid popup-container popup-container1">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+      <canvas id="canvas1"></canvas>
+      <canvas id="canvas2"></canvas>
+    </div>
+
+    <div class="container-fluid popup-container popup-container2">
       <div class="popup-text">
         <h1 class="big-title pop-up-heading">Hello, lovely day!</h1>
         <h2 class="pop-message">Welcome to Qinfang's Personal Site.</h2>
@@ -29,6 +44,7 @@
         </a>
       </div>
     </div>
+
   </section>
 
 
