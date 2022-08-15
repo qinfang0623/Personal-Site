@@ -2,10 +2,10 @@
              Check for Page loaded already
 ------------------------------------------------------ */
 
-// $(window).on("load", function() {
-//   $("body").css("opacity", 1);
-// });
-//
+$(window).on("load", function() {
+  $("body").css("opacity", 1);
+});
+
 // $(document).ready(function() {
 //   //Check if the current URL contains '#'
 //   if ($("body").css("opacity") === 1) {
