@@ -91,18 +91,17 @@ window.onload = function() {
     document.getElementById("canvas").style.opacity = 0;
     document.getElementById("audio").style.width = "150px";
     document.getElementById("audio").style.opacity = 0.2;
-    // document.getElementById("nav-bar").style.opacity = 1;
   };
 
   audio.onplay = function() {
     $("#music-player").animate({
       height: 350
-    }, 1000, 'linear');
+    }, 2000, 'linear');
     document.body.style.backgroundImage = "url('image/music-player.jpg')";
     document.getElementById("canvas").style.opacity = 0.4;
     document.getElementById("audio").style.width = "350px";
     document.getElementById("audio").style.opacity = 0.5;
-    // document.getElementById("nav-bar").style.opacity = 0.5;
+    document.getElementById("music-player").scrollIntoView({behavior: 'smooth'});
     myMusic();
   };
 
@@ -246,14 +245,16 @@ function wallPaper() {
                      cover flash
 ----------------------------------------------------- */
 
-buttonAnimation();
+// buttonAnimation();
+
+document.getElementsByClassName("enter-btn")[0].addEventListener("click", function() {
+  buttonAnimation();
+})
 
 function buttonAnimation() {
-
   $("#pop-up").animate({
     opacity: 0
-  }, 7000, 'linear');
-
+  }, 3000, 'linear');
   setTimeout(function() {
     document.querySelector("#pop-up").style.display = "none";
     $("#audio").animate({
@@ -283,9 +284,8 @@ function buttonAnimation() {
     $("hr").animate({
       opacity: 1
     }, 2000, 'linear');
-  }, 7000);
-
+  }, 3000);
   setTimeout(function() {
     document.body.style.backgroundImage = "url('image/music-player.jpg')";
-  }, 20000);
+  }, 10000);
 }
