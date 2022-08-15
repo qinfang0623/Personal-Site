@@ -582,7 +582,7 @@ body {
   z-index: 1;
   text-align: center;
   padding: 8%;
-  top: -50px;
+  top: -150px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -635,6 +635,13 @@ body {
     font-size: 1.3rem;
     font-family: 'Baloo 2', cursive;
     padding-bottom: 0;
+  }
+}
+
+/* specification for large screen */
+@media (min-width: 1700px) {
+  .popup-container1 {
+    top: -250px;
   }
 }
 

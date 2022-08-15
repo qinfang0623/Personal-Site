@@ -248,13 +248,14 @@ function wallPaper() {
 // buttonAnimation();
 
 document.getElementsByClassName("enter-btn")[0].addEventListener("click", function() {
+  document.querySelector(".pop-message").innerHTML = "Thank you for visiting!";
   buttonAnimation();
 })
 
 function buttonAnimation() {
   $("#pop-up").animate({
     opacity: 0
-  }, 3000, 'linear');
+  }, 5000, 'linear');
   setTimeout(function() {
     document.querySelector("#pop-up").style.display = "none";
     $("#audio").animate({
@@ -284,7 +285,7 @@ function buttonAnimation() {
     $("hr").animate({
       opacity: 1
     }, 2000, 'linear');
-  }, 3000);
+  }, 5000);
   setTimeout(function() {
     document.body.style.backgroundImage = "url('image/music-player.jpg')";
   }, 10000);
