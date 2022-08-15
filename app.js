@@ -14,3 +14,7 @@ app.get("/", function(req, res) {
 app.listen(process.env.PORT || 3000, function() {
   console.log("Port gets started.");
 });
+
+// heroku login
+// heroku git:remote -a <YOUR PROJECT NAME>
+// git push -f heroku master
