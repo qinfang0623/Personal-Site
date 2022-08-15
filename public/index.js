@@ -70,7 +70,7 @@ window.onload = function() {
       ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
       for (let i = 0; i < bufferLength; i++) {
-        barHeight = dataArray[i];
+        barHeight = dataArray[i] * 2;
         const red = (i * barHeight) / 10;
         const green = i * 4;
         const blue = barHeight / 4 - 12;
@@ -85,6 +85,9 @@ window.onload = function() {
   }
 
   audio.onpause = function() {
+    $("#music-player").animate({
+      height: 0
+    }, 1000, 'linear');
     document.getElementById("canvas").style.opacity = 0;
     document.getElementById("audio").style.width = "150px";
     document.getElementById("audio").style.opacity = 0.2;
@@ -92,7 +95,11 @@ window.onload = function() {
   };
 
   audio.onplay = function() {
-    document.getElementById("canvas").style.opacity = 0.3;
+    $("#music-player").animate({
+      height: 350
+    }, 1000, 'linear');
+    document.body.style.backgroundImage = "url('image/music-player.jpg')";
+    document.getElementById("canvas").style.opacity = 0.4;
     document.getElementById("audio").style.width = "350px";
     document.getElementById("audio").style.opacity = 0.5;
     // document.getElementById("nav-bar").style.opacity = 0.5;
@@ -242,10 +249,16 @@ function wallPaper() {
 buttonAnimation();
 
 function buttonAnimation() {
+
   $("#pop-up").animate({
     opacity: 0
   }, 7000, 'linear');
+
   setTimeout(function() {
+    document.querySelector("#pop-up").style.display = "none";
+    $("#audio").animate({
+      opacity: 0.2
+    }, 2000, 'linear');
     $("#title").animate({
       opacity: 1
     }, 2000, 'linear');
@@ -271,4 +284,8 @@ function buttonAnimation() {
       opacity: 1
     }, 2000, 'linear');
   }, 7000);
+
+  setTimeout(function() {
+    document.body.style.backgroundImage = "url('image/music-player.jpg')";
+  }, 20000);
 }
