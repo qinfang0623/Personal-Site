@@ -16,5 +16,5 @@ app.listen(process.env.PORT || 3000, function() {
 });
 
 // heroku login
-// heroku git:remote -a <YOUR PROJECT NAME>
+// heroku git:remote -a qinfang-personal-site
 // git push -f heroku master

@@ -2,20 +2,20 @@
              Check for Page loaded already
 ------------------------------------------------------ */
 
-$(window).on("load", function() {
-  $("body").css("opacity", 1);
-});
-
-$(document).ready(function() {
-  //Check if the current URL contains '#'
-  if ($("body").css("opacity") === 1) {
-    // Set the URL to whatever it was plus "#".
-    url = document.URL + "#";
-    location = "#";
-    //Reload the page
-    location.reload(true);
-  }
-});
+// $(window).on("load", function() {
+//   $("body").css("opacity", 1);
+// });
+//
+// $(document).ready(function() {
+//   //Check if the current URL contains '#'
+//   if ($("body").css("opacity") === 1) {
+//     // Set the URL to whatever it was plus "#".
+//     url = document.URL + "#";
+//     location = "#";
+//     //Reload the page
+//     location.reload(true);
+//   }
+// });
 
 
 /* ------------------------------------------------------
