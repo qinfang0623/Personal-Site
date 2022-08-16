@@ -155,6 +155,8 @@ function updateTime() {
   document.getElementsByClassName("ampm")[0].innerHTML = ampm;
   var year = dateInfo.getFullYear();
   document.getElementsByClassName("copyright")[0].innerHTML = "© " + year + " Qinfang Li.";
+  document.getElementsByClassName("pop-time")[0].innerHTML = hr + ":" + _min + " " + ampm;
+
 
   /* date */
   var dow = [

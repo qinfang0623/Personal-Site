@@ -581,7 +581,6 @@ body {
   position: fixed;
   z-index: 1;
   text-align: center;
-  padding: 8%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -592,7 +591,7 @@ body {
   position: fixed;
   z-index: 1;
   text-align: center;
-  padding: 8%;
+  padding: 6%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -602,13 +601,19 @@ body {
 .popup-text {
   display: inline-block;
   width: 100%;
-  padding: 80px 20px 30px;
+  padding: 0 20px 30px;
+}
+
+.pop-time {
+  color: #DAEAF1;
+  font-size: 3rem;
+  font-family: 'Baloo 2', cursive;
 }
 
 .pop-up-heading {
   color: #C6DCE4;
   font-size: 9.12rem;
-  padding: 20px 30px 0;
+  padding: 60px 30px 50px;
   line-height: 2;
   font-weight:lighter;
   position: relative;
@@ -624,7 +629,6 @@ body {
   position: relative;
   z-index: -1;
 }
-
 
 @media (max-width:1300px) {
   .pop-up-heading {
